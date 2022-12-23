@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.one {
+    background-color: rgb( 36, 164, 138);
+}
+
+.two {
+    background-color: rgb( 211, 79, 79);
+}
+
+.three {
+    background-color: rgb( 67, 91, 175);
+}
+
+.four {
+    background-color: rgb( 178, 102, 255);
+}
+
+#myBtn {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb( 255, 51, 51);
+    box-shadow: 0 0 10px rgba( 0, 0, 0, 0.25);
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+#myBtn:active {
+    background-color: #cc2333;
+}
