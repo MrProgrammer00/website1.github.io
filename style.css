@@ -9,7 +9,8 @@ section {
   width: 100vw;
   height: 100vh;
   padding: 100px;
-  background-color: rgb(82, 78, 78);
+  
+  background-image: linear-gradient(to top left, black, gray);
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -47,7 +48,11 @@ header ul {
 
 header ul li {
   list-style: none;
+  transition: 0.3s;
+}
 
+header ul li:hover {
+  transform: scale(1.3);
 }
 
 header ul li a {
@@ -63,6 +68,7 @@ header ul li a {
   font-size: 20px;
   font-weight: 600;
   margin-left: -390px;
+  cursor: pointer;
 }
 .content {
   position: relative;
@@ -81,9 +87,9 @@ header ul li a {
 
 .content .textBox h2 {
   color: #333;
-  font-size: 4em;
+  font-size: 3em;
   line-height: 1.4em;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .content .textBox h2 span {
@@ -111,6 +117,9 @@ header ul li a {
 
 }
 
+.content .textBox a:active {
+  background-color: #038d53;
+}
 .content .imgBox {
   width: 600px;
   display: flex;
@@ -176,7 +185,14 @@ header ul li a {
    margin: 5px 0px;
    transform: scale(0.6);
    filter: invert(1);
+   transition: 0.5s;
 }
+
+.sci li a:hover {
+  transform: scale(0.8);
+  
+}
+
 
 .circle {
   position: absolute;
@@ -184,6 +200,8 @@ header ul li a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: gray;
+  background-color: #ffffff;
+  opacity: 0.2;
   clip-path: circle(600px at right 800px);
+  box-shadow: rgba(0, 0, 0, 0.509);
 }
